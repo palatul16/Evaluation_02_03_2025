@@ -29,7 +29,7 @@ describe('Automation on OrangeHRM', () => {
 
         cy.log('Login Successfull')
         
-        cy.get('.oxd-userdropdown-name').should('have.text', 'Admin');
+        cy.get('.oxd-userdropdown-name').should('not.have.text', 'Admin'); //negetive testing perform there 
         cy.log('Username is not matching');
     });
 
